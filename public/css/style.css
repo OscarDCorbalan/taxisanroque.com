@@ -1,0 +1,120 @@
+.fl{float:left;}
+.bold{font-weight:bold}
+p strong,
+.pink{
+	color:#F1684E;
+
+}
+.center{text-align:center}
+.vMiddle{vertical-align:middle}
+.overflow-auto{overflow:auto;}
+html{
+	background-color: #1b1b1b;
+	font-family:Helvetica,Arial,sans-serif;
+}
+body{margin:0;}
+h1,
+div.h1{
+	font-size: 8vw; color: #FFF;
+}
+#content h1{
+	font-size: 60px;
+}
+h1,
+h2,
+h3,
+div.h1{
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Homenaje;
+}
+div.h1{
+	font-weight: bold;
+}
+h2 {
+	font-size:1.9em
+}
+h3 {
+	font-size: 1.7em;
+	text-transform: inherit;
+}
+.small{
+	font-size: 0.7em;
+}
+#top,#mail{background:url(https://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1472657417/taxisanroque/bgWhite.png) repeat;}
+.saw1{background:url(https://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1472657417/taxisanroque/sawWB.png) repeat-x}
+.saw2{background:url(https://res.cloudinary.com/oscardc/image/upload/f_auto,q_auto/v1472657417/taxisanroque/sawBW.png) repeat-x}
+.saw1,.saw2{height:13px}
+.w3outerbox{width:310px;margin-right:10px;}
+.box{color: #fff;padding:10px}
+.stack{margin-bottom:10px;}
+.w3{width:290px;margin-right:10px;}
+.w3half{width:450px;margin-right:10px;}
+.w3x2{width:610px;margin-right:10px;}
+.h60{height:60px;}
+.h280{height:280px;}
+.h370{height:370px;}
+.h380{height:380px;}
+.w,.line{
+	margin: 10px auto;
+	width:960px;
+	overflow: auto;
+}
+#flags a{
+display: block;
+float: right;
+padding: 15px;
+}
+#mail{font-size:1.2em;color:black;text-transform:uppercase;font-family:Homenaje}
+#ask{margin: 0.75em 0;}
+#booknow{
+	text-align:center;
+	padding: 25px;
+}
+#booknow>span{font-size: 10vw;}
+#booknow-img{
+	margin-right:20px;
+	width: 9vw;
+	height: auto;
+}
+footer{
+	padding:20px;
+	text-align:center;
+	font: 12px Sans-Serif;
+	color:#eee;
+}
+footer a{
+	color:#F1684E;
+	text-decoration:none;
+}
+@media (min-width: 1130px){
+	h1,
+	div.h1{
+		font-size: 90px;
+	}
+	#booknow>span{
+		font-size: 120px;
+	}
+	#booknow>img{
+		margin-right:40px;
+		width: 100px;
+	}
+}
+@media (max-width: 960px){
+	#content{
+		width: 100%;
+	}
+	#content h1{
+		font-size: 42px;
+	}
+	#content>div{
+		width: initial !important;
+		height: initial !important;
+		margin-bottom: initial !important;
+	}
+	#content>div>div{
+		width: initial !important;
+		height: initial !important;
+		margin-bottom: initial !important;
+	}
+}

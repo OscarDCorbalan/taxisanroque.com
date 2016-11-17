@@ -1,0 +1,57 @@
+  application: taxisanroque-com
+  version: 1
+  runtime: python27
+  api_version: 1
+  threadsafe: yes
+
+  handlers:
+
+  - url: /(.*index)$
+    static_files: public/404.html
+    upload: public/404.html
+    mime_type: text/html; charset=UTF-8
+
+  - url: /robots.txt
+    static_files: public/robots.txt
+    upload: public/robots.txt
+
+  - url: /css/style.css
+    static_files: public/css/style.css
+    upload: public/css/style.css
+    mime_type: text/css; charset=UTF-8
+
+  - url: /images/bg.jpg
+    static_files: public/images/bg.jpg
+    upload: public/images/bg.jpg
+    mime_type: image/jpeg
+
+  - url: /images/overlay.png
+    static_files: public/images/overlay.png
+    upload: public/images/overlay.png
+    mime_type: image/png
+
+  - url: /amp
+    static_files: public/amp/index.min.html
+    upload: public/amp/index.min.html
+    mime_type: text/html; charset=UTF-8
+
+  - url: /amp/(.+)
+    static_files: public/amp/\1.min.html
+    upload: public/amp/index.min.html
+    mime_type: text/html; charset=UTF-8
+
+  - url: /
+    static_files: public/index.min.html
+    upload: public/index.min.html
+    mime_type: text/html; charset=UTF-8
+
+  - url: /(.+)
+    static_files: public/\1.min.html
+    upload: public/index.min.html
+    mime_type: text/html; charset=UTF-8
+
+  skip_files:
+  - ^(.*/)?app\.yaml
+  - ^(.*/)?app\.yml
+  - ^cdn/(.*/)?
+  - ^src/(.*/)?
